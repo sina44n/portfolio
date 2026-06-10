@@ -154,6 +154,81 @@ nav ul li a:hover::after {
 
 
 
+
+
+
+
+.animated-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.animated-text span{
+    position: relative;
+}
+
+.animated-text span::before{
+    content: "Youtuber";
+    color: #ff004f;
+    animation: words 20s infinite;
+}
+
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #080808;
+    border-left: 2px solid #ff004f;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14)infinite;
+}
+
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff004f00;
+
+    }
+    
+}
+
+@keyframes words {
+    0%,20%{
+        content: "Full Stack Developer";
+    }
+     21%,40%{
+        content: "Frontend Specialist";
+    }
+     41%,60%{
+        content: "Javascript Developer";
+    }
+     61%,80%{
+        content: "Web App Builder";
+    }
+     81%,100%{
+        content: "UI/UX Designer";
+    }
+
+    
+}
+
+
+
+@keyframes typing{
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
+
+
 .hero-image:hover {
     box-shadow: 0 0 25px #ff004f,
         0 0 50px #ff004f,
