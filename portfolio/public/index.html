@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio__sinan </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a115f2738d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logoimage2.png" class="logo" style="height: 50px;width: 170px;">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+
+            </nav>
+
+            <div class="hero">
+                <div class="header-text">
+                    <p>Front-end developer</p>
+                    <h1>Hi, I'm <span>Sinan</span><br>Kp From Kerala</h1>
+                </div>
+
+                <div class="hero-image"></div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------about----------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div id="about-col-1">
+                    <img src="https://i.pinimg.com/1200x/da/a7/83/daa783527e760d8c10241d7798efc46b.jpg"
+                        id="anime-character">
+                </div>
+                <div id="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate and dedicated web developer with a strong focus on creating modern,
+                        responsive, and user-friendly websites. I enjoy turning ideas into real-world digital
+                        experiences through clean and efficient code. With a solid foundation in front-end
+                        technologies, I continuously work on improving my skills and staying updated with the
+                        latest trends. I pay close attention to detail and aim to deliver high-quality work in
+                        every project. My goal is to build solutions that are both visually appealing and highly
+                        functional. I am always eager to learn, grow, and take on new challenges.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-end developer</span><br>Designing web/app interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2026 - current</span><br>Front-end Training at BETTERINU Institute</li>
+                            <li><span>2024 - 2026</span><br>Team lead at StarApp LLC.</li>
+                            <li><span>2022 - 2024</span><br>front-end Executive at coin Digital Ltd.</li>
+                            <li><span>2021 - 2022</span><br>Internship at ekart eCommerce</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>Front-end Training at BETTERINU Institute</li>
+                            <li><span>2019</span><br>BCOM From Calicut university</li>
+                            <li><span>2017</span><br>Higher Secondary Humanties Stream GOVT. MODEL HSS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--------------------------------------------SERVICES----------------------------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Beautiful and elegant designs with interfaces that are Intuitive,
+                        efficient and pleasant to use for the user.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Development</h2>
+                    <p>Custom web development tailored to your specifications, designed to
+                        provide a flawless user experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Mobile App</h2>
+                    <p>Design and transform website projects into mobile apps to provide a
+                        seamless user experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------------------------PORTFOLIO--------------------------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connect you to the talented people around the world.
+                            Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connect you to the talented people around the world.
+                            Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connect you to the talented people around the world.
+                            Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">See more</a>
+
+        </div>
+    </div>
+
+
+    <!----------------------------------------------Contact------------------------------------------------->
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> muhammedsinankp2005@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>91+9562534310</p>
+                    <div class="social-icons">
+                        <a href="https://wa.me/919562534310"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://x.com/MuhammedSi37877"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/_sina44n_?igsh=MTd5Ym02cXpoOGl3Nw=="><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sina44n/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/sina44n"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61590571356653"><i
+                                class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <!-- <form name="submit-to-googtle-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form> -->
+                    <form name="submit-to-google-sheet">
+                           <input type="text" name="from_name" placeholder="Your Name" required>
+                          <input type="email" name="from_email" placeholder="Your Email" required>
+                          <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                         <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright kevin. made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+
+         function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+         
+    </script>
+
+    <!-- <script>
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwb6Gp-deGpcLAMCFJvQXNYzlWfAQjGCKALdNWwZmn5U2YBBuyk4HgnxEQE_iGr-_5m7A/exec'
+
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+
+        e.preventDefault()
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+
+        .then(response => console.log('Success!', response))
+
+        .catch(error => console.error('Error!', error.message))
+
+         })
+
+</script> -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+    (function(){
+        emailjs.init("1EKFy7VeKLofJcgnp"); // replace
+    })();
+
+    const form = document.forms['submit-to-google-sheet'];
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        emailjs.sendForm('service_9k44hdt', 'template_iu2p8xl', this)
+            .then(function() {
+                alert("Message sent successfully ✅");
+                form.reset();
+            }, function(error) {
+                alert("Failed to send ❌");
+                console.log(error);
+            });
+    });
+</script>
+
+</body>
+
+</html>
